@@ -1,0 +1,21 @@
+.fav-cont{
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.fav-items{
+    
+        border: 2px solid red;
+        width: 200px;
+        margin: 10px;
+        img{
+            width: 200px;
+        }
+        p{
+            color: black;
+        }
+        span{
+            margin-right: 20px;
+        }
+    
+}

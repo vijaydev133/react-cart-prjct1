@@ -1,0 +1,51 @@
+[
+    {
+      "id": "1",
+      "name": "Harry Potter and the Philosopher's Stone",
+      "img": "https://images-eu.ssl-images-amazon.com/images/I/81m9fP+LIPL._UX300__PJku-sticker-v7,TopRight,0,-50_AC_UL304_SR304,200_.jpg",
+      "isFav": false,
+      "desc": "Harry Potter is a series of seven fantasy novels written by British author J. K. Rowling. The novels chronicle the lives of a young wizard, Harry Potter, and his friends Hermione Granger and Ron Weasley, all of whom are students at Hogwarts School of Witchcraft and Wizardry. The main story arc concerns Harry's struggle against Lord Voldemort, a dark wizard who intends to become immortal, overthrow the wizard governing body known as the Ministry of Magic and subjugate all wizards and Muggles (non-magical people).",
+      "qty" : 1
+    },
+    {
+      "id": "2",
+      "name": "The Magic of the Lost Temple",
+      "img": "https://images-eu.ssl-images-amazon.com/images/I/81UhCMXi8fL._AC_UL304_SR304,200_.jpg",
+      "isFav": false,
+      "desc": "City girl Nooni is surprised at the pace of life in her grandparents’ village in Karnataka. But she quickly gets used to the gentle routine there and involves herself in a flurry of activities, including papad making, organizing picnics and learning to ride a cycle, with her new-found friends. Things get exciting when Nooni stumbles upon an ancient fabled stepwell right in the middle of a forest. Join the intrepid Nooni on an adventure of a lifetime in this much-awaited book by Sudha Murty that is heart-warming, charming and absolutely unputdownable.",
+      "qty" : 1
+    },
+    {
+      "id": "3",
+      "name": "Colour With Crayons Book",
+      "img": "https://images-eu.ssl-images-amazon.com/images/I/81GEhSSrjKL._AC_UL304_SR304,200_.jpg",
+      "isFav": false,
+      "desc" : "‘Colour with Crayons’ – a book for toddlers that offers many easy and lovely designed illustrations for colouring in and have creative fun using crayons. It will introduce little hands to the joys of colouring and help them recognise different shades, shapes and everyday objects while having fun.  ",
+      "qty" : 1
+    },
+    {
+      "id": "4",
+      "name": "Great Stories for Children",
+      "img": "https://images-eu.ssl-images-amazon.com/images/I/71s8qpa4F6L._AC_UL304_SR304,200_.jpg",
+      "isFav": false,
+      "desc": "Colour with Crayons' � a book for toddlers that offers many easy and lovely designed illustrations for colouring in and have creative fun using crayons. It will introduce little hands to the joys of colouring and help them recognise different shades, shapes and everyday objects while having fun.",
+      "qty" : 1
+    },
+    {
+      "id": "5",
+      "name": "Nursery Rhymes Board Book",
+      "img": "https://images-eu.ssl-images-amazon.com/images/I/71N0FI8U35L._AC_UL304_SR304,200_.jpg",
+      "isFav": false,
+      "desc": "A beautifully illustrated collection of traditional nursery rhymes including favourites like Twinkle Twinkle little star, Jack and Jill and Humpty Dumpty. Padded cover, stylish design and enchanting illustrations make this a perfect gift for your little one who has just started reading.",
+      "qty" : 1
+    },
+    {
+      "id": "6",
+      "name": "My First Animal Sticker Book",
+      "img": "https://images-eu.ssl-images-amazon.com/images/I/817UNsZFh7L._AC_UL304_SR304,200_.jpg",
+      "isFav": false,
+      "desc": "A perfect sticker book to introduce a budding artist to animals and birds. The book has cool 100 plus colourful illustrated stickers to have fun while learning basic concepts. Colourful stickers enhance your child?s learning adventure and helps them develop their creativity and fine motor skills.",
+      "qty" : 1
+    }
+  ]
+  

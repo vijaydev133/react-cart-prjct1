@@ -1,0 +1,24 @@
+.Book-container{
+    display: flex;
+    overflow-x: scroll;
+    scroll-behavior: smooth;
+}
+
+.book-cont{
+    border: 2px solid red;
+    width: 200px;
+    margin: 10px;
+    img{
+        width: 200px;
+    }
+    p{
+        color: black;
+    }
+    span{
+        margin-right: 20px;
+    }
+}
+
+
+
+
