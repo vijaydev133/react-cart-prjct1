@@ -7,7 +7,7 @@ import "./Cart.scss";
 
 const Cart = () => {
   const { state, dispatch } = useContext(stateContext);
-  const [qty, setQty] = useState(1);
+  // const [qty, setQty] = useState(state.qty);
 
   // useEffect(()=>{
 
@@ -21,18 +21,50 @@ const Cart = () => {
     });
   }
 
-  function qtyIncmt(val, id) {
-    products.forEach((product) => {
-      if (id === product.id) {
-        product.qty = product.qty + 1;
-      }
-    });
+  function qtyIncmt( id) {
+    let resl = state.qty
+    
+      // console.log(resl);
+    resl[id] = resl[id] + 1
+    dispatch({
+      type : "qtyIncmt",
+      payLoad : resl
+    })
+    
+    
+    // products.forEach((product) => {
+    //   if (id === product.id) {
+        // dispatch({
+        //   type : "qtyIncmt",
+        //   payLoad : {  }
+        // })
+        // setQty(val)
+        // setQty(prev => prev + 1)
+    //   }
+    // });
+    
   }
 
-  function qtyDecmt(val) {
-    console.log(typeof val);
-    setQty(val - 1);
-  }
+  function qtyDecmt(id) {
+    let resl = state.qty
+    // if (resl[id] < 1){
+    //   rmvItem(id)
+    // }
+    // else{
+      
+      // console.log(resl);
+    resl[id] = resl[id] - 1
+    if (resl[id] < 1){
+      rmvItem(id)
+    } else{
+      dispatch({
+        type : "qtyDecmt",
+        payLoad : resl
+      })
+    }
+    
+    }
+  // }
 
   let item = products.map((product) => {
     return state.CartArr.map((car) => {
@@ -44,9 +76,9 @@ const Cart = () => {
             <div className="cart-options">
               <span onClick={() => rmvItem(product.id)}>(-)</span>
               <div className="cart-qty">
-                <span onClick={() => qtyIncmt(product.qty, product.id)}>+</span>
-                <span>{qty}</span>
-                <span onClick={() => qtyDecmt()}>-</span>
+                <span onClick={() => qtyIncmt( product.id)}>+</span>
+                <span>{state.qty[product.id]}</span>
+                <span onClick={() => qtyDecmt(product.id)}>-</span>
               </div>
             </div>
           </div>

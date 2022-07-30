@@ -1,7 +1,7 @@
 export const initialState = {
     CartArr : [],
     FavArr : [],
-    qty : 1
+    qty : [0,1,2,1,1,1,1]
 }
 
 export const reducerFunc = (state,action)=>{
@@ -10,6 +10,7 @@ export const reducerFunc = (state,action)=>{
         case "addToCart" : 
         return{
             ...state,
+            qty : [0,1,2,1,1,1,1],
             CartArr: [...state.CartArr,...action.payLoad]
         }
         case "rmvItem" : 
@@ -26,6 +27,16 @@ export const reducerFunc = (state,action)=>{
         return{
             ...state,
             FavArr : [...action.payLoad]
+        }
+        case "qtyIncmt": 
+        return{
+            ...state,
+            qty : [...action.payLoad]
+        }
+        case "qtyDecmt": 
+        return{
+            ...state,
+            qty : [...action.payLoad]
         }
         default : 
         return{
