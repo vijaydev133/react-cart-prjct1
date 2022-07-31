@@ -6,7 +6,7 @@ import "./Detail.scss"
 
 const Detail = () => {
     let param = useParams()
-    console.log(param.id);
+ 
     let item = products.map(product=>{
         if(param.id === product.id){
             return ( 

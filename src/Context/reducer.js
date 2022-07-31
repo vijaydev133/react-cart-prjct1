@@ -1,16 +1,27 @@
 export const initialState = {
     CartArr : [],
     FavArr : [],
-    qty : [0,1,2,1,1,1,1]
+    qty : [0,1,1,1,1,1,1],
+    isAuthenticated : JSON.parse(localStorage.getItem("isLoggedIn")) || false
 }
 
 export const reducerFunc = (state,action)=>{
 
     switch(action?.type){
+        case "login" :
+            return{
+                ...state,
+                ...action.payLoad
+            }
+        case "logout": 
+            return{
+                 ...state,
+                 ...action.payLoad
+      }
         case "addToCart" : 
         return{
             ...state,
-            qty : [0,1,2,1,1,1,1],
+            qty : [0,1,1,1,1,1,1],
             CartArr: [...state.CartArr,...action.payLoad]
         }
         case "rmvItem" : 
